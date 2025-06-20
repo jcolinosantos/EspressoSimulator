@@ -10,18 +10,21 @@
   <div class="container">
     <h1>My Espresso Simulator</h1>
   
-    <div id="button-group">
-      <button id="Dose">Your dose is (Enter value)</button>
-      <button id="Yield">Yield is </button>
-      <button id="Time">Your espresso was pulled in</button>
-  </div>
-    
-  <div class="resultados">
-      <p>Dose value: <span id="dValue">?</span></p>
-      <p>Yield value: <span id="yValue">?</span></p>
-      <p>Time value: <span id="tValue">?</span></p>
+  <div class="input-group">
+    <label for="doseInput">Dose (grams):</label>
+    <input type="number" id="doseInput" min="12" max="25" />
+
+    <label for="yieldInput">Yield (grams):</label>
+    <input type="number" id="yieldInput" value="40" readonly />
+
+    <label for="timeOutput">Time (seconds):</label>
+    <input type="number" id="timeOutput" readonly />
+
+    <button id="calculateButton">Let's Espresso!</button>
   </div>
 
-  <script src="script.js"></script>
+  </div>
+    
+<script src="script.js"></script>
 </body>
 </html>

@@ -3,47 +3,54 @@ body {
   background-color: #f0f0f0;
   text-align: center;
   padding-top: 100px;
+  margin: 0;
 }
 
 .container {
-  background-color: #fff;
-  margin: 0 auto;
+  background: whitesmoke;
+  margin: auto;
   padding: 30px;
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input.error {
+  color: red;
+  border: 2px solid red;
+}
+
 button {
-  padding: 10px 80px;
+  padding: 10px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #f0a8ed;
   color: white;
   border: none;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
-#button-group {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.resultados {
-  margin-top: 20px;
-  background: f8f8f8;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-#mensaje {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #333;
+#calculateButton:hover {
+  background-color: #f49bf1;
 }
