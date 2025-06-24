@@ -11,7 +11,7 @@ body {
   margin: auto;
   padding: 30px;
   border-radius: 10px;
-  width: 300px;
+  width: 380px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -21,6 +21,7 @@ body {
   gap: 15px;
   text-align: left;
 }
+
 
 label {
   font-weight: bold;
@@ -44,7 +45,7 @@ button {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #f0a8ed;
+  background-color: #ae56ae;
   color: white;
   border: none;
   border-radius: 5px;
@@ -52,5 +53,89 @@ button {
 }
 
 #calculateButton:hover {
-  background-color: #f49bf1;
+  background-color: #ae56ae;
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;  /* Tamaño adecuado para el toggle */
+  height: 20px; /* Tamaño adecuado para el toggle */
+  margin-right: 8px;
+  overflow: hidden;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 2; 
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  border-radius: 20px; /* Redondear el fondo */
+  transition: 0.4s;
+  position: absolute;
+  z-index: 1;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;   /* Tamaño del círculo */
+  width: 14px;    /* Tamaño del círculo */
+  left: 2px;      /* Posición del círculo */
+  bottom: 2px;    /* Posición del círculo */
+  background-color: white;
+  border-radius: 50%; /* Círculo perfecto */
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ae56ae; /* Color cuando está activado */
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);  /* Mueve el círculo cuando se activa */
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+details {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 15px;
+  max-width: 500px;
+  color: #ae56ae;
+  text-align: left;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #ae56ae;
+  outline: none;
+}
+
+details[open] {
+  background: #e9f0f3;
+}
+
+details p {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #ae56ae;
+  text-align: justify;
+}
+

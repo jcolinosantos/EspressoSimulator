@@ -9,6 +9,14 @@
 <body>
   <div class="container">
     <h1>My Espresso Simulator</h1>
+  <details style="margin-bottom: 20px;">
+    <summary style="cursor: pointer; font-weight: bold;">About this tool</summary>
+    <div style="margin-top: 10px;">
+      <p> This calculator estimates espresso shot time based on three key parameters: dose, yield, and grind size. It employs a simplified resistance-based model to illustrate how each variable influences water flow and total extraction time. </p> 
+      <p> While not intended to replace hands-on dialing-in, this tool serves as an effective training resource for baristas seeking to better understand the cause-and-effect dynamics underlying recipe adjustments—particularly when modifying grind size or brew ratio. It offers a cost-efficient alternative to extensive practical testing, eliminating the need to pull numerous physical shots during the initial learning phase. </p>
+      <p> Designed with beginners in mind, the primary objective is to encourage exploration and experimentation with input variables (dose, yield, and grind size) in order to achieve an ideal extraction time—typically between 25 and 32 seconds. </p>
+    </div>
+  </details>
   
   <div class="input-group">
     <label for="grindSize">Grinder (1-finest to 5-coarsest):</label>
@@ -19,11 +27,23 @@
       <option value="4">4</option>
       <option value="5">5 - (More coarse)</option>
     </select>
+    
     <label for="doseInput">Dose (grams):</label>
     <input type="number" id="doseInput" min="12" max="25" />
 
     <label for="yieldInput">Yield (grams):</label>
-    <input type="number" id="yieldInput" value="40" readonly />
+    <input type="number" id="yieldInput" value="40" />
+
+    <label for="ratioOutput">Ratio (dose : yield):</label>
+    <input type="text" id="ratioOutput" readonly />
+
+    <div class="toggle-group">
+        <label for="fixRatioCheckbox">Fix Ratio:</label>
+        <label class="switch">
+          <input type="checkbox" id="fixRatioCheckbox" />
+          <span class="slider"></span>
+        </label>
+    </div>
 
     <label for="timeOutput">Time (seconds):</label>
     <input type="text" id="timeOutput" readonly />
