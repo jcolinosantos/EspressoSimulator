@@ -7,49 +7,49 @@ This project is primarily designed as an educational tool for beginner baristas 
 
 ## Why This Project?
 
-    Interactive learning: The tool encourages practical exploration, allowing users to experiment with parameters to find the ideal combination.
+Interactive learning: The tool encourages practical exploration, allowing users to experiment with parameters to find the ideal combination.
 
-    Simplified model: While it doesn’t replace hands-on experience, the resistance-based model clearly illustrates how different factors affect extraction.
+Simplified model: While it doesn’t replace hands-on experience, the resistance-based model clearly illustrates how different factors affect extraction.
 
-    User-friendly: The controls are intuitive, offering a seamless experience for beginners.
+User-friendly: The controls are intuitive, offering a seamless experience for beginners.
 
 ## Features
 
-    Simple and modern interface: The app uses HTML and CSS to provide a user-friendly and visually appealing experience.
+Simple and modern interface: The app uses HTML and CSS to provide a user-friendly and visually appealing experience.
 
-    Dynamic input of parameters: Adjust the dose (12-25g), yield, and grind size interactively.
+Dynamic input of parameters: Adjust the dose (12-25g), yield, and grind size interactively.
 
-    Fixed ratio control: Set a fixed dose-to-yield ratio for easier experimentation.
+Fixed ratio control: Set a fixed dose-to-yield ratio for easier experimentation.
 
-    Automatic calculations: Press the "Let's Espresso!" button to calculate the estimated extraction time in seconds, taking into account grind resistance and dose.
+Automatic calculations: Press the "Let's Espresso!" button to calculate the estimated extraction time in seconds, taking into account grind resistance and dose.
 
-    Grind size simulation: The system adjusts the flow rate based on the grind size selected, simulating how finer or coarser grinds impact extraction.
+Grind size simulation: The system adjusts the flow rate based on the grind size selected, simulating how finer or coarser grinds impact extraction.
 
 ## Usage
 
-    Grind Size: Choose a value between 1 (finest) and 5 (coarse) representing the grind fineness.
+Grind Size: Choose a value between 1 (finest) and 5 (coarse) representing the grind fineness.
 
-    Dose: Enter the amount of coffee in grams (between 12 and 25g).
+Dose: Enter the amount of coffee in grams (between 12 and 25g).
 
-    Yield: Adjust the espresso yield (in grams).
+Yield: Adjust the espresso yield (in grams).
 
-    Fix Ratio: Enable "Fix Ratio" to maintain a fixed ratio between dose and yield.
+Fix Ratio: Enable "Fix Ratio" to maintain a fixed ratio between dose and yield.
 
-    Calculate Time: Click the "Let's Espresso!" button to calculate the estimated extraction time based on the provided parameters.
+Calculate Time: Click the "Let's Espresso!" button to calculate the estimated extraction time based on the provided parameters.
 
 ## Results
 
-    Dose:Yield Ratio: The dose-to-yield ratio is automatically calculated.
+Dose:Yield Ratio: The dose-to-yield ratio is automatically calculated.
 
-    Time (Seconds): The estimated extraction time is calculated based on the selected parameters.
+Time (Seconds): The estimated extraction time is calculated based on the selected parameters.
 
 ## Technologies Used
 
-    HTML5 for the structure of the web page.
+HTML5 for the structure of the web page.
 
-    CSS3 for design and responsive layout.
+CSS3 for design and responsive layout.
 
-    JavaScript for the logic and interactive behavior of the app.
+JavaScript for the logic and interactive behavior of the app.
 
 ## Contribution
 
